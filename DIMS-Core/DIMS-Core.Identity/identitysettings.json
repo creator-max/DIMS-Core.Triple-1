@@ -1,0 +1,4 @@
+// to skip tracking of this file write from the solution root: git update-index --skip-worktree .\DIMS-Core.Identity\identitysettings.json
+{
+    "ConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=DIMSCoreIdentity;Trusted_Connection=True;"
+}
