@@ -66,6 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Samples.sql" />
+    <Build Include="Tables\UserProfiles.sql" />
+    <Build Include="Tables\Directions.sql" />
+    <Build Include="Views\vUserProfiles.sql" />
+    <Build Include="StoreProcedures\DeleteUser.sql" />
+    <Build Include="Views\vUserProgress.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
