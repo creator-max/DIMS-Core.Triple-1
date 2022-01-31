@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using DIMS_Core.DataAccessLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace DIMS_Core.DataAccessLayer.Repositories
+namespace DIMS_Core.DataAccessLayer.Repositories.Base
 {
     /// <summary>
     ///     Generic Repository

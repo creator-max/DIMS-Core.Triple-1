@@ -4,6 +4,7 @@ using DIMS_Core.Common.Extensions;
 using DIMS_Core.DataAccessLayer.Context;
 using DIMS_Core.DataAccessLayer.Filters;
 using DIMS_Core.DataAccessLayer.Interfaces;
+using DIMS_Core.DataAccessLayer.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
 
 namespace DIMS_Core.DataAccessLayer.Repositories
