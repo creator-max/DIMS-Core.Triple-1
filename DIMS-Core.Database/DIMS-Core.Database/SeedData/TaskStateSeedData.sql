@@ -1,0 +1,1 @@
+﻿INSERT INTO [TaskState] ([StateName]) VALUES ('Active'),('Success'),('Fail')
