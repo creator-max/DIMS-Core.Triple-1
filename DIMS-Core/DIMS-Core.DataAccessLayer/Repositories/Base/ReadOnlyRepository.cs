@@ -1,4 +1,5 @@
-﻿using DIMS_Core.DataAccessLayer.Interfaces;
+﻿using DIMS_Core.DataAccessLayer.Context;
+using DIMS_Core.DataAccessLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,9 +10,9 @@ namespace DIMS_Core.DataAccessLayer.Repositories.Base
         where TEntity : class
     {
         protected readonly DbSet<TEntity> CurrentSet;
-        private readonly DbContext _context;
+        private readonly DimsContext _context;
 
-        protected ReadOnlyRepository(DbContext context)
+        protected ReadOnlyRepository(DimsContext context)
         {
             _context = context;
         }
