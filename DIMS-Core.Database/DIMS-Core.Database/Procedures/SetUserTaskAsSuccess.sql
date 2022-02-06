@@ -2,5 +2,5 @@
 	@UserId int,
 	@TaskId int
 AS 
-	UPDATE [UserTask] SET [UserTask].StateId=2 WHERE [UserTask].TaskId = @TaskId AND [UserTask].UserId = @UserId
+	UPDATE [UserTasks] SET [UserTasks].StateId=2 WHERE [UserTasks].TaskId = @TaskId AND [UserTasks].UserId = @UserId
 RETURN 0

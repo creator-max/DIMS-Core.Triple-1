@@ -8,4 +8,6 @@
 	CONSTRAINT [PK_TaskTracks] PRIMARY KEY CLUSTERED([TaskTrackId] ASC),
 	
 	FOREIGN KEY([UserTaskId]) REFERENCES [dbo].[UserTasks]([UserTaskId])
+	ON DELETE CASCADE
+    ON UPDATE CASCADE
 )
