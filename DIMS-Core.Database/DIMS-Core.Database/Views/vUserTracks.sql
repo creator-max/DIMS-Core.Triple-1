@@ -1,4 +1,4 @@
-﻿CREATE VIEW [dbo].[vUserTrack]	
+﻿CREATE VIEW [dbo].[vUserTracks]	
 AS 
 SELECT	[UserTasks].[UserId],
 		[Tasks].[TaskId],

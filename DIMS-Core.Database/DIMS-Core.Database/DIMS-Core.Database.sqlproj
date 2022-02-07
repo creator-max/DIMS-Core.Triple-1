@@ -68,7 +68,7 @@
     <Build Include="Tables\Samples.sql" />
     <Build Include="Views\vTasks.sql" />
     <Build Include="Tables\Tasks.sql" />
-    <Build Include="Views\vUserTrack.sql" />
+    <Build Include="Views\vUserTracks.sql" />
     <Build Include="StoreProcedures\DeleteTask.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
