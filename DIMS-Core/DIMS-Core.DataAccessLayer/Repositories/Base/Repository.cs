@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using DIMS_Core.DataAccessLayer.Context;
 using DIMS_Core.DataAccessLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace DIMS_Core.DataAccessLayer.Repositories
+namespace DIMS_Core.DataAccessLayer.Repositories.Base
 {
     /// <summary>
     ///     Generic Repository
@@ -14,9 +15,9 @@ namespace DIMS_Core.DataAccessLayer.Repositories
         where TEntity : class
     {
         protected readonly DbSet<TEntity> CurrentSet;
-        private readonly DbContext _context;
+        private readonly DimsContext _context;
 
-        protected Repository(DbContext context)
+        protected Repository(DimsContext context)
         {
             _context = context;
             CurrentSet = context.Set<TEntity>();
