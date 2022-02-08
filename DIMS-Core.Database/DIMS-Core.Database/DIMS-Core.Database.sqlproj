@@ -66,6 +66,10 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Samples.sql" />
+    <Build Include="Views\vTasks.sql" />
+    <Build Include="Tables\Tasks.sql" />
+    <Build Include="Views\vUserTracks.sql" />
+    <Build Include="StoreProcedures\DeleteTask.sql" />
     <Build Include="Tables\UserProfiles.sql" />
     <Build Include="Tables\Directions.sql" />
     <Build Include="Views\vUserProfiles.sql" />
