@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace DIMS_Core.DataAccessLayer.Models
+﻿namespace DIMS_Core.DataAccessLayer.Models
 {
     public partial class Sample
     {

@@ -4,9 +4,9 @@ using AutoMapper;
 using Dawn;
 using DIMS_Core.BusinessLayer.Interfaces;
 using DIMS_Core.BusinessLayer.Models.Samples;
-using DIMS_Core.DataAccessLayer.Context;
 using DIMS_Core.DataAccessLayer.Filters;
 using DIMS_Core.DataAccessLayer.Interfaces;
+using DIMS_Core.DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DIMS_Core.BusinessLayer.Services
@@ -74,7 +74,7 @@ namespace DIMS_Core.BusinessLayer.Services
             return _mapper.Map<SampleResponseDto>(entity);
         }
 
-        public async Task Delete(int id)
+        public async System.Threading.Tasks.Task Delete(int id)
         {
             Guard.Argument(id)
                  .GreaterThan(0);
