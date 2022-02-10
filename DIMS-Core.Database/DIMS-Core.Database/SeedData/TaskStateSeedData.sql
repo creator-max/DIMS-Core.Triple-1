@@ -1,1 +1,1 @@
-﻿INSERT INTO [TaskState] ([StateName]) VALUES ('Active'),('Success'),('Fail')
+﻿INSERT INTO [TaskStates] ([StateName]) VALUES ('Active'),('Success'),('Fail')
