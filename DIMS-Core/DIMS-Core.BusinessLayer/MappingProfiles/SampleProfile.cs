@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using DIMS_Core.BusinessLayer.Models.Samples;
-using DIMS_Core.DataAccessLayer.Context;
+using DIMS_Core.DataAccessLayer.Models;
 
 namespace DIMS_Core.BusinessLayer.MappingProfiles
 {

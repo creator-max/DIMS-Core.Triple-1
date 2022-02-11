@@ -58,11 +58,11 @@
   <Import Condition="'$(NetCoreBuild)' != 'true' AND '$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <Import Condition="'$(NetCoreBuild)' != 'true' AND '$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
-    <Folder Include="DataSeeding" />
     <Folder Include="Properties" />
     <Folder Include="StoreProcedures" />
     <Folder Include="Views" />
     <Folder Include="Tables" />
+    <Folder Include="SeedData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Samples.sql" />
@@ -75,6 +75,13 @@
     <Build Include="Views\vUserProfiles.sql" />
     <Build Include="StoreProcedures\DeleteUser.sql" />
     <Build Include="Views\vUserProgress.sql" />
+    <Build Include="Tables\TaskStates.sql" />
+    <Build Include="Tables\TaskTracks.sql" />
+    <Build Include="Tables\UserTasks.sql" />
+    <Build Include="Views\vUserTask.sql" />
+    <Build Include="StoreProcedures\SetUserTaskAsFail.sql" />
+    <Build Include="StoreProcedures\SetUserTaskAsSuccess.sql" />
+    <PostDeploy Include="SeedData\TaskStateSeedData.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
