@@ -63,6 +63,7 @@
     <Folder Include="StoreProcedures" />
     <Folder Include="Views" />
     <Folder Include="Tables" />
+    <Folder Include="SeedData" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Samples.sql" />
@@ -75,6 +76,11 @@
     <Build Include="Views\vUserProfiles.sql" />
     <Build Include="StoreProcedures\DeleteUser.sql" />
     <Build Include="Views\vUserProgress.sql" />
+    <Build Include="Tables\UserTasks.sql" />
+    <Build Include="Tables\TaskStates.sql" />
+    <Build Include="Tables\TaskTracks.sql" />
+    <Build Include="Views\vUserTasks.sql" />
+    <PostDeploy Include="SeedData\TaskStateSeedData.sql" />
   </ItemGroup>
   <Import Condition="'$(NetCoreBuild)' == 'true'" Project="$(NETCoreTargetsPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
