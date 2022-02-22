@@ -7,6 +7,9 @@ namespace DIMS_Core.DataAccessLayer.Interfaces
         ISampleRepository SampleRepository { get; }
         IUserProfileRepository UserProfileRepository { get; }
         IDirectionRepository DirectionRepository { get; }
+        ITaskRepository TaskRepository { get; }
+        IVTaskRepository VTaskRepository { get; }
+        IVUserTrackRepository VUserTrackRepository { get; }
         IVUserProfileRepository VUserProfileRepository { get; }
         ITaskTrackRepository TaskTrackRepository { get; }
         IUserTaskRepository UserTaskRepository { get; }
